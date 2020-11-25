@@ -8,7 +8,9 @@
     }
 }
 
-
+.header-link{
+    font-weight: 500;
+}
 
 
 .link-icon{
@@ -54,9 +56,9 @@
     display: inline-block;
     position: absolute;
     content: "";
-    width: 48px;
+    width: 70px;
     height: 4px;
-    left: 0;
+    left: -5px;
     bottom: 0;
 
     background: $accent-color;
