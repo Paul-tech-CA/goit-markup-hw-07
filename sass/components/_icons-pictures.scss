@@ -6,9 +6,8 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-}
 
-.pictures-svg::before {
+    &::before {
     display: block;
     content: "";
     background-size: contain;
@@ -16,8 +15,10 @@
     width: 70px;
     height: 70px; 
     background-position: center;
-    
-} 
+    } 
+}
+
+
 
 .icon-antenna::before{
     background-image: url("../images/svg_first_part/antenna.svg");

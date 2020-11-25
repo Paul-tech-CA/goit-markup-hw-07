@@ -27,17 +27,15 @@
     margin: 0 0 10px 0;
 
     position: relative;
-}
 
-
-.form-field label{
+    & label{
     font-size: 12px;
     line-height: 1.67;
     letter-spacing: 0.01em;
     color: $primary-text-color;
-}
+    }
 
-.form-field input{    
+    & input{    
     padding: 10px 42px;
     width: 448px;
     height: 40px;
@@ -46,31 +44,28 @@
     border-radius: 4px;
     
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
+
+
 
 .form-input:focus{
     border: 1px solid $accent-color;
     box-sizing: border-box;
     border-radius: 4px;
     outline: none;
-}
 
-.form-input:focus ~.icon-picture-moodal{
+    & ~.icon-picture-moodal{
     fill: $accent-color;
     cursor: pointer;
     outline: none;
+    }
 }
+
 
 .form-field-area{
     display: flex;
     flex-direction: column;
-}
-
-.comment-area:focus{
-    border: 1px solid $accent-color;
-    box-sizing: border-box;
-    border-radius: 4px;
-    outline: none;
 }
 
 .comment-area{
@@ -86,14 +81,22 @@
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
-}
 
-.comment-area::placeholder{
+    &:focus{
+    border: 1px solid $accent-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+    }
+
+    &::placeholder{
     font-size: 14px;
     line-height: 1,33;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+    }
 }
+
 
 .wrapper-btn{
     display: flex;
@@ -112,29 +115,31 @@
 }
 
 
-.policy:before{
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid black;
-    border-radius: 4px;
-}
-
 .policy{
     display: block;
     display: flex;
     align-items: center;
     display: flex;
     justify-content: space-between;
+
+    &::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    
+        .checkbox:checked + &{
+        background-image: url("../images/icon-check.png");
+        border: none;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        }
+    }
+
 }
 
-.checkbox:checked + .policy::before{
-    background-image: url("../images/icon-check.png");
-    border: none;
-    background-repeat: no-repeat;
-    background-size: cover;  
-}
 
 .link-modal{
     color: $accent-color;
