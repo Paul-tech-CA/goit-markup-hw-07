@@ -1,0 +1,23 @@
+
+.feauture-list-main {
+    width: 270px;  
+    justify-content: space-between;
+  }
+    
+  .section-list {
+      display: flex;
+  }
+  
+  .feature-list {
+      color: $title-text-color;
+      font-size: 14px;
+      line-height: 1.43;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 10px;
+  }
+  
+  .section-list-features {
+  justify-content:space-between;
+  }
